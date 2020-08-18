@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:latest
 RUN set -eux; \
     apk add --no-cache ruby ruby-json ruby-etc ruby-bigdecimal sqlite-libs libstdc++; \
     apk add --no-cache --virtual build-deps alpine-sdk ruby-dev sqlite-dev; \
